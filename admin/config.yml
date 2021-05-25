@@ -38,3 +38,19 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: 'Featured Post'
+    label: 'Post'
+    folder: 'posts'
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "Anonymous" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", default: "https://images-na.ssl-images-amazon.com/images/I/51tuuXjbVmL._AC_SY741_.jpg", }
+      
+
+
